@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'S_marceta_MyFavouritePCGames';
+  title?: string;
+
+  constructor() {
+    this.title = 'my favourite pc games';
+  }
 }
