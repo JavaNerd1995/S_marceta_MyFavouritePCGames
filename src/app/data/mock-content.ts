@@ -7,10 +7,7 @@ import { IContent } from '../models/icontent';
   styleUrls: ['./content-list.component.scss']
 })
 
-
-export class mockcontent {
-listOfGames: IContent[];
-
+export const listOfGames: Content[] = [{
 constructor() {
   this.listOfGames = [];
   this.listOfGames.push({
@@ -50,4 +47,4 @@ constructor() {
     type: ''
   });
 }
-}
+}]
