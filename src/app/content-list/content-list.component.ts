@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IContent } from '../models/icontent';
-import { ContentService } from '../services/content.service';
+import { videoGameService } from '../services/videoGame';
 
 @Component({
   selector: 'app-content-list',
@@ -11,12 +11,12 @@ export class ContentListComponent  implements OnInit{
   listOfGames: IContent[];
   
   
-constructor(private contentService: ContentService) {
+constructor(private videoGameService: videoGameService) {
 this.listOfGames = [];
 }
 
 ngOnInit(): void {
-  this.contentService.getContent().subscribe((IContentArrayOfData: IContent[]) => {
+  this.videoGameService.getContent().subscribe((IContentArrayOfData: IContent[]) => {
     this.listOfGames = IContentArrayOfData;
   });
 }

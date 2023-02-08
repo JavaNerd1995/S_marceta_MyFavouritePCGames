@@ -6,7 +6,7 @@ import { CONTENT } from '../data/mock-content';
 @Injectable({
   providedIn: 'root'
 })
-export class ContentService {
+export class videoGameService {
   
   constructor() { }
 
