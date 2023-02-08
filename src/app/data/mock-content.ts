@@ -1,7 +1,6 @@
 import { IContent } from '../models/icontent';
 
 export const CONTENT: IContent[] = [{
-  
     id: 1024,
     imageSrc: 'https://hindmoviez.app/wp-content/uploads/2023/01/The-Last-of-Us-Season-1-English.jpg',
     description: '<p>This is the body of the content</p>',
