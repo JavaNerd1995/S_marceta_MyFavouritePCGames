@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { IContent } from '../models/icontent';
 
 @Component({
   selector: 'app-content-list',
@@ -7,7 +6,13 @@ import { IContent } from '../models/icontent';
   styleUrls: ['./content-list.component.scss']
 })
 export class ContentListComponent {
-
+  contentService: any;
+  content: any;
+  
+  ngOnInit() {
+    this.contentService.getContent().subscribe((content: any
+      )    => this.content = content);
+    }
 
 }
 

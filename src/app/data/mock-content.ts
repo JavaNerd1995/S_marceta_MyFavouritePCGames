@@ -1,16 +1,7 @@
-import { Component } from '@angular/core';
 import { IContent } from '../models/icontent';
 
-@Component({
-  selector: 'app-content-list',
-  templateUrl: './content-list.component.html',
-  styleUrls: ['./content-list.component.scss']
-})
-
-export const listOfGames: Content[] = [{
-constructor() {
-  this.listOfGames = [];
-  this.listOfGames.push({
+export const CONTENT: IContent[] = [{
+  
     id: 1024,
     imageSrc: 'https://hindmoviez.app/wp-content/uploads/2023/01/The-Last-of-Us-Season-1-English.jpg',
     description: '<p>This is the body of the content</p>',
@@ -45,6 +36,6 @@ constructor() {
     name: 'the last of us',
     author: 'Sony play-station studios',
     type: ''
-  });
-}
-}]
+  }
+];
+
