@@ -1,3 +1,11 @@
 div {
     border: 2px;
   }
+
+:host {
+  display: inline-block;;
+}
+
+  :host.special-item {
+    box-shadow: 5px;
+  }

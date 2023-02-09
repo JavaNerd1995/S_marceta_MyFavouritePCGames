@@ -1,11 +1,12 @@
 {
   "name": "s-marceta-my-favourite-pcgames",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "scripts": {
     "ng": "ng",
     "createNewComponent": "ng generate component",
     "createNewInterface": "ng generate interface",
     "createNewClass": "ng generate class",
+    "createNewService": "ng generate createNewService GamePlayer",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
@@ -22,7 +23,6 @@
     "@angular/platform-browser-dynamic": "^15.1.0",
     "@angular/router": "^15.1.0",
     "rxjs": "~7.8.0",
-    "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
   },
   "devDependencies": {
@@ -36,6 +36,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
+    "tslib": "^2.5.0",
     "typescript": "~4.9.4"
   }
 }

@@ -17,4 +17,6 @@ import { ContentListItemComponent } from './content-list-item/content-list-item.
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  
+}

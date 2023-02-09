@@ -1,5 +1,2 @@
 <p>content-list works!</p>
-<app-content-list>*ngFor="let individualgames of listOfgames" [singlegameItem]="individualgames"></app-content-list>
-<app-content-list></app-content-list>
-<app-content-list></app-content-list>
-<app-content-list></app-content-list>
+<app-content-card *ngFor="let individualgames of listOfgames" [singlegameItem]="individualgames"></app-content-card>
