@@ -1,10 +1,9 @@
 export interface IContent {
-    listOfGames: any;
     id: number;
-    name: string;
+    title: string;
     description: string;
     author: string;
-    imageSrc: string;
+    imgSrc: string;
     type: string;
     tags?: string[];
 }
