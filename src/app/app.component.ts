@@ -10,7 +10,7 @@ import { VideoGameService } from './services/videoGame.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit{
-  // singleGame: IContent | undefined;
+
   singleGame?: IContent;
   title = 'A_Millerman_MyFavouriteNintendoGames';
 
