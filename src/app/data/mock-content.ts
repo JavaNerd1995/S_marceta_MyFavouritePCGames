@@ -36,7 +36,8 @@ export const listOfGames: IContent[] = [{
     title: 'the last of us',
     author: 'Sony play-station studios',
     type: ''
-  }];
+  }
+]
 
   export const INVALIDGAME: IContent = {
     id: -1,

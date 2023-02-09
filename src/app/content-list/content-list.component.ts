@@ -7,6 +7,7 @@ import { VideoGameService } from '../services/videoGame.service';
   templateUrl: './content-list.component.html',
   styleUrls: ['./content-list.component.scss']
 })
+
 export class ContentListComponent implements OnInit{
   videoGameArray: IContent[];
 

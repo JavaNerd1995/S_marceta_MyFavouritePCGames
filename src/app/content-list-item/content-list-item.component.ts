@@ -3,12 +3,13 @@ import { IContent } from '../models/icontent';
 
 @Component({
   selector: 'app-content-list-item',
-  templateUrl: './content-list-item.component.html',
+  templateUrl:'./content-list-item.component.html',
   styleUrls: ['./content-list-item.component.scss']
 })
 export class ContentListItemComponent {
   // I can choose to set this as an optional variable with the question mark
   @Input() contentItemInputValue?: IContent;
+
 
   // OR I could use a constructor to give it a default value that will be replaced later
     /*
@@ -29,3 +30,6 @@ export class ContentListItemComponent {
     console.log("ID: ", this.contentItemInputValue?.id, " Description: ", this.contentItemInputValue?.description)
   }
 }
+
+
+

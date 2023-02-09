@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { IContent } from './models/icontent';
 import { VideoGameService } from './services/videoGame.service';
 
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
