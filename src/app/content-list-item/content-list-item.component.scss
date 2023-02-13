@@ -1,3 +1,35 @@
-div {
-    border: 2px;
+:host {
+  
+  width: 300px;
+  margin: 10px;
+  padding: 5px;
+  display: inline-flex;
+  border: 5px;
+
+  &.even-game {
+    background-color: #87c981;
   }
+  
+}
+
+
+:h3 {
+    font-weight: bold;
+  }
+
+
+:host.odd-game {
+  
+  background-color: #cea978;
+}
+
+h2 {
+  text-decoration: underline;
+  color: darkred;
+  text-align: center;
+}
+img {
+  
+  width: 300px;
+  height: 300px;
+}

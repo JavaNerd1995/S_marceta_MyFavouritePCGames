@@ -1,58 +1,37 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IContent } from '../models/icontent';
+import { VideoGameService } from '../services/videoGame.service';
 
 @Component({
   selector: 'app-content-list',
   templateUrl: './content-list.component.html',
   styleUrls: ['./content-list.component.scss']
 })
-export class ContentListComponent {
-  listOfGames: IContent[];
 
-  constructor() {
-    this.listOfGames = [];
-    this.listOfGames.push({
-      id: 1024,
-      imageSrc: 'https://hindmoviez.app/wp-content/uploads/2023/01/The-Last-of-Us-Season-1-English.jpg',
-      description: '<p>This is the body of the content</p>',
-      name: 'the last of us',
-      author: 'Sony play-station studios',
-      type: ''
-    },{
-      id: 1025,
-      imageSrc: 'https://hindmoviez.app/wp-content/uploads/2023/01/The-Last-of-Us-Season-1-English.jpg',
-      description: '<p>This is the body of the content</p>',
-      name: 'the last of us',
-      author: 'Sony play-station studios',
-      type: ''
-    },{
-      id: 1026,
-      imageSrc: 'https://hindmoviez.app/wp-content/uploads/2023/01/The-Last-of-Us-Season-1-English.jpg',
-      description: '<p>This is the body of the content</p>',
-      name: 'the last of us',
-      author: 'Sony play-station studios',
-      type: ''
-    },{
-      id: 1027,
-      imageSrc: 'https://hindmoviez.app/wp-content/uploads/2023/01/The-Last-of-Us-Season-1-English.jpg',
-      description: '<p>This is the body of the content</p>',
-      name: 'the last of us',
-      author: 'Sony play-station studios',
-      type: ''
-    },{
-      id: 1028,
-      imageSrc: 'https://hindmoviez.app/wp-content/uploads/2023/01/The-Last-of-Us-Season-1-English.jpg',
-      description: '<p>This is the body of the content</p>',
-      name: 'the last of us',
-      author: 'Sony play-station studios',
-      type: ''
+export class ContentListComponent implements OnInit{
+  videoGameArray: IContent[];
+
+  constructor(private videoGameService: VideoGameService) {
+    this.videoGameArray = [];
+  }
+
+  ngOnInit(): void {
+    this.videoGameService.getContent().subscribe((videoGames: IContent[]) => {
+      console.log("Getting the game list");
+      this.videoGameArray = videoGames;
     });
-  }
 
-  processContent(content: IContent):string {
-    // console.log(content.body);
-    return content.type ?? "EMPTY";
-  }
+    let testGameToUpdate: IContent = {
+      id: 1, // this means we're replacing WiiSports with this new game, cause it has the same id
+      title: "The Last Of Us",
+      description: "Some random guy takes on responsibility in a zombie game",
+      author: "Naughty Dog",
+      imgSrc: "https://upload.wikimedia.org/wikipedia/en/4/46/Video_Game_Cover_-_The_Last_of_Us.jpg",
+      type: "zombie",
+    };
 
+    
+
+
+  }
 }
-
