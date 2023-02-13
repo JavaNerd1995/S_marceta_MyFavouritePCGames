@@ -5,8 +5,6 @@
     <img *ngIf="contentItemInputValue.imgSrc" [src]="contentItemInputValue.imgSrc" (click)="imageClicked()">
     <p *ngIf="contentItemInputValue.description" [innerHTML]="contentItemInputValue.description"></p>
     <div class="meta-data">
-      <h3>{{contentItemInputValue.author}}</h3>
-      <span class="type">{{contentItemInputValue.type}}</span>
     </div>
     <div *ngIf="contentItemInputValue.tags" class="tags">
       <span *ngFor="let tag of contentItemInputValue.tags">{{tag}}</span>
