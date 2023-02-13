@@ -1,6 +1,6 @@
 {
   "name": "s-marceta-my-favourite-pcgames",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "scripts": {
     "ng": "ng",
     "createNewComponent": "ng generate component",
