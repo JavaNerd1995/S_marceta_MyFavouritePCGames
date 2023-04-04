@@ -10,6 +10,7 @@ import { SearchComponent } from './search/search.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { TopNavigationComponent } from './top-navigation/top-navigation.component';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { ModifyContentComponent } from './modify-content/modify-content.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
     ContentDetailComponent,
     SearchComponent,
     PageNotFoundComponent,
-    TopNavigationComponent
+    TopNavigationComponent,
+    ModifyContentComponent
     
   ],
   imports: [

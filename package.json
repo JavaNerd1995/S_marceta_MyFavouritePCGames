@@ -6,7 +6,7 @@
     "createNewComponent": "ng generate component",
     "createNewInterface": "ng generate interface",
     "createNewClass": "ng generate class",
-    "createNewService": "ng generate createNewService GamePlayer",
+    "createNewService": "ng generate service",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
