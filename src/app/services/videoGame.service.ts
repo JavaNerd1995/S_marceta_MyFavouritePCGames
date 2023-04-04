@@ -23,7 +23,7 @@ export class VideoGameService {
         break;
       }
     }
-    if (!videoGameFound) { // never found a valid game
+    if (!videoGameFound) { 
       return of(INVALIDGAME);
     }
     console.warn("Got the item", videoGameFound);
@@ -31,10 +31,8 @@ export class VideoGameService {
   }
 
   addContentItem(item: IContent): Observable<IContent[]>{
-    // you can read more about how the find method works here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
     if (listOfGames.find((game: IContent) => game.id === item.id) == undefined)
     {
-      // no video games exist with that id, so we can safely add it to the array
       listOfGames.push(item);
     }
     return of(listOfGames);
