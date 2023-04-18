@@ -36,6 +36,20 @@ export const listOfGames: IContent[] = [{
     title: 'CyberPunk 2077',
     author: 'Sony play-station studios',
     type: ''
+  },{
+    id: 1028,
+    imgSrc: 'https://i.redd.it/2afuemjc8ek31.jpg',
+    description: '<p>Cyberpunk 2077 is a 2020 action role-playing video game developed by CD Projekt Red and published by CD Projekt. Set in Night City, an open world set in the Cyberpunk universe, players assume the role of a customisable mercenary known as V, who can acquire skills in hacking and machinery with options for melee and ranged combat.</p>',
+    title: 'CyberPunk 2077',
+    author: 'Sony play-station studios',
+    type: ''
+  },{
+    id: 1028,
+    imgSrc: 'https://i.redd.it/2afuemjc8ek31.jpg',
+    description: '<p>Cyberpunk 2077 is a 2020 action role-playing video game developed by CD Projekt Red and published by CD Projekt. Set in Night City, an open world set in the Cyberpunk universe, players assume the role of a customisable mercenary known as V, who can acquire skills in hacking and machinery with options for melee and ranged combat.</p>',
+    title: 'CyberPunk 2077',
+    author: 'Sony play-station studios',
+    type: ''
   }
 ]
 

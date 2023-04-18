@@ -2,4 +2,6 @@
   *ngFor="let singleVideoGame of videoGameArray; even as thisVideoGameIsEven; odd as thisVideoGameIsOdd"
   [contentItemInputValue]="singleVideoGame"
   [ngClass]="{'even-game': thisVideoGameIsEven, 'odd-game': thisVideoGameIsOdd}"></app-content-list-item>
-
+  <app-content-card *ngFor="let item of (contentArray |
+  filterIContent)"
+  [contentItem]="item"></app-content-card>
