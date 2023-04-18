@@ -11,6 +11,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { TopNavigationComponent } from './top-navigation/top-navigation.component';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { ModifyContentComponent } from './modify-content/modify-content.component';
+import { FilterIContentPipe } from './filter-icontent.pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ModifyContentComponent } from './modify-content/modify-content.componen
     SearchComponent,
     PageNotFoundComponent,
     TopNavigationComponent,
-    ModifyContentComponent
+    ModifyContentComponent,
+    FilterIContentPipe
     
   ],
   imports: [

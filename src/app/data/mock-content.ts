@@ -22,7 +22,7 @@ export const listOfGames: IContent[] = [{
     title: 'Tom Clancys the division',
     author: 'Massive entertainment',
     type: ''
-  },{
+  },{ 
     id: 1027,
     imgSrc: 'https://cdn.supersoluce.com/file/docs/docid_50f633a58f152fee45000051/elemid_4ee9d6ec0a2fe93f0e00000c/the-witcher-3-wild-hunt-pc.jpg',
     description: '<p>The Witcher 3: Wild Hunt is a 2015 action role-playing game developed and published by CD Projekt. It is the sequel to the 2011 game The Witcher 2: Assassins of Kings and the third game in The Witcher video game series.</p>',

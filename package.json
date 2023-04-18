@@ -1,12 +1,13 @@
 {
   "name": "s-marceta-my-favourite-pcgames",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "scripts": {
     "ng": "ng",
     "createNewComponent": "ng generate component",
     "createNewInterface": "ng generate interface",
     "createNewClass": "ng generate class",
     "createNewService": "ng generate service",
+    "createNewPipe": "ng generate Pipe",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
