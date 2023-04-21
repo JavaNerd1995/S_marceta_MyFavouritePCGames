@@ -1,10 +1,9 @@
 import { Injectable } from '@angular/core';
-
+import  SwUpdate
 @Injectable({
   providedIn: 'root'
 })
 export class LogUpdateService {
-
   constructor(private updates: SwUpdate) { 
     public init(){
       this.updates.versionUpdates.subscribe(event => {
@@ -21,6 +20,5 @@ export class LogUpdateService {
       break;
       } });
       }
-      
-  }
-}
+    }
+  
